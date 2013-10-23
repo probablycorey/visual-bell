@@ -1,7 +1,7 @@
 {
   "name": "visual-beep",
   "main": "./lib/visual-beep",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Shows a visual cue when the `beep` event is triggered",
   "repository": {
     "type": "git",
