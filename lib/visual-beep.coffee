@@ -14,6 +14,7 @@ module.exports =
     @removeOverlay()
 
   addOverlay: ->
+    @removeOverlay() if @overlay
     @overlay = $$ -> @div class: 'visual-beep'
     $('body').append @overlay
 

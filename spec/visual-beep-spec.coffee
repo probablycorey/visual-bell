@@ -11,6 +11,11 @@ describe "VisualBeep", ->
       rootView.trigger 'beep'
       expect($('body > .visual-beep')).toExist()
 
+    it "does not ever create two overlays", ->
+      rootView.trigger 'beep'
+      rootView.trigger 'beep'
+      expect($('body > .visual-beep')).toHaveLength 1
+
   describe "when visual beeps are disabled", ->
     it "does not append div.visual-beep on 'beep' event", ->
       config.set('visual-beep.enabled', false)
