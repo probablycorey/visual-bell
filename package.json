@@ -1,14 +1,14 @@
 {
-  "name": "visual-beep",
-  "main": "./lib/visual-beep",
+  "name": "visual-bell",
+  "main": "./lib/visual-bell",
   "version": "0.1.0",
   "description": "Shows a visual cue when the `beep` event is triggered",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/visual-beep.git"
+    "url": "https://github.com/atom/visual-bell.git"
   },
   "bugs": {
-    "url": "https://github.com/atom/visual-beep/issues"
+    "url": "https://github.com/atom/visual-bell/issues"
   },
   "engines": {
     "atom": ">27.0"

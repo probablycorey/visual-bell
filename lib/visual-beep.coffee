@@ -6,7 +6,7 @@ module.exports =
 
   activate: ->
     rootView.on 'beep', =>
-      return unless config.get('visual-beep.enabled')
+      return unless config.get('visual-bell.enabled')
       @addOverlay()
       setTimeout((=> @removeOverlay()), 300)
 
@@ -15,7 +15,7 @@ module.exports =
 
   addOverlay: ->
     @removeOverlay() if @overlay
-    @overlay = $$ -> @div class: 'visual-beep'
+    @overlay = $$ -> @div class: 'visual-bell'
     $('body').append @overlay
 
   removeOverlay: ->
