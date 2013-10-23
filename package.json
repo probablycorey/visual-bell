@@ -1,0 +1,16 @@
+{
+  "name": "visual-beep",
+  "main": "./lib/visual-beep",
+  "version": "0.0.0",
+  "description": "Shows a visual cue when the `beep` event is triggered",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atom/visual-beep.git"
+  },
+  "bugs": {
+    "url": "https://github.com/atom/visual-beep/issues"
+  },
+  "engines": {
+    "atom": ">27.0"
+  }
+}
