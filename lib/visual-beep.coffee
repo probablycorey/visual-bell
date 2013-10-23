@@ -18,6 +18,5 @@ module.exports =
     $('body').append @overlay
 
   removeOverlay: ->
-    console.log "bye", @overlay
     @overlay?.remove()
     @overlay = null
