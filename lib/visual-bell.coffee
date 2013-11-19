@@ -5,8 +5,8 @@ module.exports =
     enabled: true
 
   activate: ->
-    rootView.on 'beep', =>
-      return unless config.get('visual-bell.enabled')
+    atom.rootView.on 'beep', =>
+      return unless atom.config.get('visual-bell.enabled')
       @addOverlay()
       setTimeout((=> @removeOverlay()), 300)
 
