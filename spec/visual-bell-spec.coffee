@@ -4,7 +4,9 @@ VisualBell = require '../lib/visual-bell'
 describe "VisualBell", ->
   beforeEach ->
     atom.workspaceView = new WorkspaceView()
-    atom.packages.activatePackage("visual-bell", immediate: true)
+
+    waitsForPromise ->
+      atom.packages.activatePackage("visual-bell")
 
   describe "when visual bells are enabled (default)", ->
     it "appends div.visual-bell to body on 'beep' event", ->
