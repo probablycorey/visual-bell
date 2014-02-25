@@ -4,6 +4,7 @@
   "version": "0.7.0",
   "description": "Shows a visual cue when the `beep` event is triggered",
   "repository": "https://github.com/atom/visual-bell",
+  "license": "MIT",
   "engines": {
     "atom": ">27.0"
   }
