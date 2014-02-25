@@ -1,4 +1,3 @@
-visual-bell
-===========
+# Visual Bell package
 
-Shows a visual cue when the `beep` event is triggered
+Shows a visual cue when the `beep` event is triggered.
